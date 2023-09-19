@@ -1,0 +1,34 @@
+<%- include("partials/header.ejs") %>
+
+    <h1>ToDoList 💼</h1>
+
+    <div class="mode_changer">
+        <a href="/">Free Time 🏖️ </a>
+        <a href="/work">Work 💼 </a>
+    </div>
+
+    <p class="date">
+        <%= completedDate %>
+    </p>
+
+    <form action="/submitForWork" method="POST">
+        <input type="text" name="taskToDo" class="text_input" placeholder="Write down what To Do...">
+        <input type="submit" class="button_input" value="+">
+    </form>
+
+    <div class="task_layout">
+        <% if(locals.inputedTaskWork){ %>
+            <% inputedTaskWork.forEach((task)=> {%>
+                <li>
+                    <input type="checkbox" class="checkbox_style"><label>
+                        <%= task %>
+                    </label>
+                </li>
+                <% })}%>
+    </div>
+    <p class="motivation_quote">“It always seems impossible until it is done.”</p>
+
+    </main>
+    </body>
+
+    </html>

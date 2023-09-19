@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: #1450A3;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #FFC436;
+}
+
+.mode_changer {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+a {
+  color: #FFC436;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.date {
+  color: #FFC436;
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.text_input {
+  border: none;
+  border-radius: 10px;
+  height: 2.2rem;
+  width: 16rem;
+  text-align: center;
+  background-color: #FFC436;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+.text_input::placeholder {
+  color: #1450A3;
+}
+
+.button_input {
+  height: 2.2rem;
+  width: 2.2rem;
+  border-radius: 50%;
+  border: none;
+  background-color: #FFC436;
+  color: #1450A3;
+}
+
+.task_layout {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+  color: #191D88;
+  background-color: #FFC436;
+  border-bottom: 4px solid #1450A3;
+  padding-right: 1rem;
+  text-align: left;
+  height: 2rem;
+  min-width: 25rem;
+  max-width: 40rem;
+  font-size: 1.3rem;
+}
+
+.checkbox_style {
+  margin-right: 0.6rem;
+}
+
+input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  clip-path: circle(35% at 50% 50%);
+}
+
+input[type=checkbox]:checked+label {
+  color: #191D88;
+  text-decoration: line-through;
+}
+
+.motivation_quote {
+  color: #FFC436;
+  font-size: 1.5rem;
+}
